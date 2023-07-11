@@ -1,0 +1,32 @@
+.wrapper {
+  width:100%;
+  height:auto;
+}
+
+/* Header Style */
+header .container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navi {
+  display:flex;
+  column-gap: var(--el-s-interval );
+}
+
+header .navi a {
+  font-weight: 600;
+  font-size: var(--f-n-size);
+  letter-spacing: 1px; /* 글자와 글자 사이의 간격 */
+  color:var(--f-m-color);
+  transition: all .4s;
+}
+
+header .navi a:hover,
+header .navi li.active a {
+  color:var(--f-g-color );
+}
+
+
+/* Hero section */

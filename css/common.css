@@ -31,3 +31,14 @@ Container - fit center element
   height:auto;
   margin:auto;
 }
+
+header {
+  width:100%;
+  height:auto;
+  padding:1.25rem 0;
+}
+
+/* Dot Bottom */
+.dot-bottom {
+  border-bottom: 2px dotted #eee;
+}
