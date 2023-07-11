@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/*
+---------------------------------------------
+reset
+---------------------------------------------
+*/
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+
+html, body{
+ background: #fff;
+ font-family: 'Poppins', sans-serif;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+}
+
+
+img{
+ display:block;
+ /* 코드 상에는 남는 공간이 없는데 미리보기로 볼 때 공간이 남는 경우 block으로 맞춰주면 그 현상이 사라진다. */
+}
+
+
+ul, li {
+ list-style: none;
+}
+
+
+p {
+ font-size: 14px;
+ line-height: 25px;
+ color: #2a2a2a;
+}
+
+
+a, i, b, strong, em {
+ text-decoration: none;
+ font-weight:normal;
+ font-style:normal;
+ color:#2a2a2a;
+}
+

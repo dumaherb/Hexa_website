@@ -1,0 +1,33 @@
+/*
+---------------------------------------------
+root
+---------------------------------------------
+*/
+:root{
+  /* font */
+  --f-m-color : #2a2a2a;
+  --f-g-color : #aaa;
+  --f-n-size : .9375rem;
+ /* 요소가 복잡할수록 root 안에 값을 주고 var()로 불러오기를 하면 쉽게 작업할 수 있다. */
+ 
+  /* color */
+  --bg-color : #2a2a2a;
+ 
+ 
+  /* element interval */
+  --el-s-interval : 1.875rem;
+ }
+
+
+ 
+ /*
+---------------------------------------------
+Container - fit center element
+---------------------------------------------
+*/
+
+.container {
+  width : 1200px;
+  height:auto;
+  margin:auto;
+}
