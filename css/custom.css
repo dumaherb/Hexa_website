@@ -29,4 +29,112 @@ header .navi li.active a {
 }
 
 
-/* Hero section */
+/* Hero section Style */
+.hero {
+  padding:2.5rem 0;   /* 위아래 간격 */
+}
+
+.hero .container {
+  display:flex;
+  column-gap: .9375rem;
+}
+
+.hero .container img {
+  width:100%;
+  height:100%; /* 비율이 다를 때 이 방법을 쓰면 안 됨!! 반드시 정사각형이거나 사진 형태가 같을 때 할 것 */
+}
+
+.hero .container .left-side,
+.hero .container .right-side {
+  width:50%;
+  position:relative;
+}
+
+.hero .left-side .inside-txt {
+  position: absolute;
+  color:#fff;   /* a, input tag는 글자 색상을 상속받지 않는다 */
+  width:85%;
+  height:100%;
+  left:50%;
+  transform: translateX(-50%);
+  display:flex;
+  flex-direction: column;   /* 위에서 아래로 요소 분할 */
+  justify-content: center;
+}
+
+.hero .left-side .inside-txt h4 {
+  font-size:3.25rem;
+  font-weight:700;
+}
+
+.hero .left-side .inside-txt span {
+  font-style:italic;
+  font-weight:400;    /* 웹폰트에서 지원해주지 않으면 사용할 수 없음 */
+  margin:0.875rem 0 1.875rem;  /* flex-gap을 이용해도 되지만 요소가 세개뿐이므로! */
+}
+
+.hero .container .right-side {
+  display:flex;
+  flex-wrap:wrap; /* flex의 속성은 행이기 때문에 크기 별로 공간을 나눌 수 있게 한다. */
+  gap:.9375rem; /* column-gap:행 간격, row-gap:열 간격, gap:사방 간격 */
+}
+
+.hero .container .right-side > div {
+  width:calc(50% - .4688rem);  /* 위에서 준 .9375rem(15px)을 절반으로 나눈 값을 뺀다 */
+  position:relative;
+}
+
+.hero .right-side .inside-grid-txt {
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: .9375rem;
+  color:#fff;
+}
+
+.hero .right-side .inside-grid-txt h4 {
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.hero .right-side .inside-grid-txt span {
+  font-style:italic;
+}
+
+.hero .right-side .hover-box {
+  position:absolute;
+  width:90%;
+  height:90%;
+  background: rgba(42, 42, 42, .9);   /* 알파 값이 투명도이며, 자식 요소에게 상속되지 않는다. */
+  color:#fff;
+  z-index:999;    /* static이 아닌 포지션 요소가 겹쳤을 때 우선순위가 높은 요소가 위로 올라감 */
+  opacity: 0;     /* 자식에게 상속 됨 */
+                  /* 사라지는 효과로 사용할 경우, 요소는 그대로 남고 화면에서만 보이지 않는다. 이럴 경우, visibility(:hidden/visible) 속성의 값을 이용한다. */
+  visibility: hidden;
+  transition: all .4s;
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);    /* 중복해서 사용할 수 없으므로 같이 써줘야 함 */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:.75rem;
+}
+.hero .right-side .hover-box h4 {
+  font-size:1.25rem;
+}
+.hero .right-side .hover-box span {
+  text-align: center;
+  font-size:.875em;
+  padding:.75rem 0;
+  font-weight:300;
+}
+  .hero .container .right-side > div:hover .hover-box {
+    /* 위에서 div에 relative를 줬기 때문에, 위처럼 작성해야 :hover가 먹는다. */
+    opacity:1;
+    visibility: visible;
+  } 

@@ -27,7 +27,8 @@ Container - fit center element
 */
 
 .container {
-  width : 1200px;
+  width:100%;
+  max-width : 1280px;
   height:auto;
   margin:auto;
 }
@@ -38,7 +39,43 @@ header {
   padding:1.25rem 0;
 }
 
+/* Sub Section padding */
+.sub-section {
+  padding:5.625rem 0;
+}
+  /* section title style */
+  .section-title {
+    width:100%;
+    height:auto;
+  }
+    .section-title h3 {
+      font-size:2.125rem;
+      font-weight:700;
+      color:var(--f-m-color);
+    }
+    .section-title p {
+      font-size:.875rem;
+      color:var(--f-g-color);
+      font-style:italic;
+      font-weight: 400;
+    }
+
 /* Dot Bottom */
 .dot-bottom {
   border-bottom: 2px dotted #eee;
 }
+
+/* Common btn Style */
+.common-btn {
+  font-size:.875rem;
+  border:1px solid #fff;
+  font-weight:500;
+  color:#fff;
+  width:fit-content;  /* width를 컨텐츠 크기에 맞춰줌 */
+  padding:.75rem 1.25rem;
+  transition: all .4s;
+}
+  .common-btn:hover {
+    background:#fff;
+    color:var(--f-m-color);
+  }
