@@ -1,113 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome || Hexashop</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome || Hexashop</title>
 
-  <!-- css files link -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-  <div class="wrapper">
-    <header class="dot-bottom">
-      <div class="container">
-        <div class="logo">
-          <a href="#">
-            <img src="images/logo.png" alt="logo.png">
-          </a>
-        </div> <!-- /.logo -->
+    <!-- icon font link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-        <ul class="navi">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Men's</a></li>
-          <li><a href="#">Women's</a></li>
-          <li><a href="#">Kid's</a></li>
-          <li><a href="#">Explore</a></li>
-        </ul> <!-- /.navi -->
+    <!-- Swiper css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-      </div> <!-- /.container -->
-    </header> <!-- /.dot-bottom -->
-
-    <!-- Hero section -->
-    <section class="hero dot-bottom">
-      <div class="container">
-        <div class="left-side">
-          <div class="inside-txt">
-            <h4>We are Hexa shop</h4>
-            <span>Awesome, clean & creative HTML5 Tamplate</span>
-            <a href="#" class="common-btn">Purchase Now!</a>
+    <!-- css files link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="dot-bottom">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="logo.png" />
+            </a>
           </div>
-          <img src="images/left-banner-image.jpg" alt="landing image">
-        </div> <!-- /.left-side -->
+          <!-- /.logo -->
 
-        <div class="right-side">
-          <div class="right-grid-1">
-            <div class="hover-box">
-              <h4>Women</h4>
-              <span>Lorem Ipsum is simply dummy text of the</span>
-              <a href="#" class="common-btn">Discover More</a>
-            </div>
-            <div class="inside-grid-txt">
-              <h4>Women</h4>
-              <span>Best Clothes for Women</span>
-            </div>
-            <img src="images/baner-right-image-01.jpg" alt="banner image1">
-          </div>
-          <div class="right-grid-2">
-            <div class="hover-box">
-              <h4>Men</h4>
-              <span>Lorem Ipsum is simply dummy text of the</span>
-              <a href="#" class="common-btn">Discover More</a>
-            </div>
-            <div class="inside-grid-txt">
-              <h4>Men</h4>
-              <span>Best Clothes for Men</span>
-            </div>
-            <img src="images/baner-right-image-02.jpg" alt="banner image2">
-          </div>
-          <div class="right-grid-3">
-            <div class="hover-box">
-              <h4>Kids</h4>
-              <span>Lorem Ipsum is simply dummy text of the</span>
-              <a href="#" class="common-btn">Discover More</a>
-            </div>
-            <div class="inside-grid-txt">
-              <h4>Kids</h4>
-              <span>Best Clothes for Kids</span>
-            </div>
-            <img src="images/baner-right-image-03.jpg" alt="banner image3">
-          </div>
-          <div class="right-grid-4">
-            <div class="hover-box">
-              <h4>Accessories</h4>
-              <span>Lorem Ipsum is simply dummy text of the</span>
-              <a href="#" class="common-btn">Discover More</a>
-            </div>
-            <div class="inside-grid-txt">
-              <h4>Accessories</h4>
-              <span>Best Trend Accessories</span>
-            </div>
-            <img src="images/baner-right-image-04.jpg" alt="banner image4">
-          </div>
-        </div> <!-- /.right-side -->
-
-      </div> <!-- /.container -->
-    </section> <!-- /.hero -->
-
-    <!-- Slider section -->
-    <section class="sub-section dot-bottom men-slider">
-      <div class="container">
-        <div class="section-title">
-          <h3>Men's Latest</h3>
-          <p>Details to details is what makes Hexashop different from the other themes.</p>
+          <ul class="navi">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Men's</a></li>
+            <li><a href="#">Women's</a></li>
+            <li><a href="#">Kid's</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+          <!-- /.navi -->
         </div>
-      </div>
-    </section>
-  </div> <!-- /.wrapper -->
-</body>
+        <!-- /.container -->
+      </header>
+      <!-- /.dot-bottom -->
+
+      <!-- Hero section -->
+      <section class="hero dot-bottom">
+        <div class="container">
+          <div class="left-side">
+            <div class="inside-txt">
+              <h4>We are Hexa shop</h4>
+              <span>Awesome, clean & creative HTML5 Tamplate</span>
+              <a href="#" class="common-btn">Purchase Now!</a>
+            </div>
+            <img src="images/left-banner-image.jpg" alt="landing image" />
+          </div>
+          <!-- /.left-side -->
+
+          <div class="right-side">
+            <div class="right-grid-1">
+              <div class="hover-box">
+                <h4>Women</h4>
+                <span>Lorem Ipsum is simply dummy text of the</span>
+                <a href="#" class="common-btn">Discover More</a>
+              </div>
+              <div class="inside-grid-txt">
+                <h4>Women</h4>
+                <span>Best Clothes for Women</span>
+              </div>
+              <img src="images/baner-right-image-01.jpg" alt="banner image1" />
+            </div>
+            <div class="right-grid-2">
+              <div class="hover-box">
+                <h4>Men</h4>
+                <span>Lorem Ipsum is simply dummy text of the</span>
+                <a href="#" class="common-btn">Discover More</a>
+              </div>
+              <div class="inside-grid-txt">
+                <h4>Men</h4>
+                <span>Best Clothes for Men</span>
+              </div>
+              <img src="images/baner-right-image-02.jpg" alt="banner image2" />
+            </div>
+            <div class="right-grid-3">
+              <div class="hover-box">
+                <h4>Kids</h4>
+                <span>Lorem Ipsum is simply dummy text of the</span>
+                <a href="#" class="common-btn">Discover More</a>
+              </div>
+              <div class="inside-grid-txt">
+                <h4>Kids</h4>
+                <span>Best Clothes for Kids</span>
+              </div>
+              <img src="images/baner-right-image-03.jpg" alt="banner image3" />
+            </div>
+            <div class="right-grid-4">
+              <div class="hover-box">
+                <h4>Accessories</h4>
+                <span>Lorem Ipsum is simply dummy text of the</span>
+                <a href="#" class="common-btn">Discover More</a>
+              </div>
+              <div class="inside-grid-txt">
+                <h4>Accessories</h4>
+                <span>Best Trend Accessories</span>
+              </div>
+              <img src="images/baner-right-image-04.jpg" alt="banner image4" />
+            </div>
+          </div>
+          <!-- /.right-side -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.hero -->
+
+      <!-- Men Slider section -->
+      <section class="sub-section dot-bottom slider">
+        <div class="container">
+          <div class="section-title">
+            <h3>Women's Latest</h3>
+            <p>
+              Details to details is what makes Hexashop different from the other
+              themes.
+            </p>
+          </div>
+
+          <div class="slider-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-03.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="slider-navi">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sub-section dot-bottom slider">
+        <div class="container">
+          <div class="section-title">
+            <h3>Women's Latest</h3>
+            <p>
+              Details to details is what makes Hexashop different from the other
+              themes.
+            </p>
+          </div>
+
+          <div class="slider-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-03.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="slider-navi">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sub-section dot-bottom slider">
+        <div class="container">
+          <div class="section-title">
+            <h3>Kid's Latest</h3>
+            <p>
+              Details to details is what makes Hexashop different from the other
+              themes.
+            </p>
+          </div>
+
+          <div class="slider-wrapper">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-03.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-01.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-hover-box">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="ri-eye-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-star-s-fill"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                      </li>
+                    </ul>
+                    <img src="images/men-02.jpg" alt="men item" />
+                  </div>
+                  <div class="slider-txt">
+                    <div class="item-tit">
+                      <h4>Classic Spring</h4>
+                      <div class="item-star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <h5>$120.00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="slider-navi">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sub-section dot-bottom explore">
+        <div class="container">
+          <div class="left-side">
+            <div class="section-title">
+              <h3>Explore Our Products</h3>
+            </div>
+            <div class="explore-txt-box">
+              <p>
+                You are allowed to use this HexaShop HTML CSS template. You can
+                feel free to modify or edit this layout. You can convert this
+                template as any kind of ecommerce CMS theme as you wish.
+              </p>
+              <b>
+                <i class="ri-double-quotes-l"></i>
+                <em>
+                  You are not allowed to redistribute this template ZIP file on
+                  any other website.
+                </em>
+              </b>
+              <p>
+                There are 5 pages included in this HexaShop Template and we are
+                providing it to you for absolutely free of charge at our
+                TemplateMo website. There are web development costs for us.
+              </p>
+              <p>
+                If this template is beneficial for your website or business,
+                please kindly support us a little via PayPal. Please also tell
+                your friends about our great website. Thank you.
+              </p>
+              <a href="#" class="common-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="right-grid-1">
+              <div class="inside-grid-txt">
+                <h4>Leather Bags</h4>
+                <span>Latest Collection</span>
+              </div>
+            </div>
+            <div class="right-grid-2">
+              <img src="images/explore-image-01.jpg" alt="" explore-image-01 />
+            </div>
+            <div class="right-grid-3">
+              <img src="images/explore-image-02.jpg" alt="explore-image-02" />
+            </div>
+            <div class="right-grid-4">
+              <div class="inside-grid-txt">
+                <h4>Different Types</h4>
+                <span>Over 304 Products</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- swiper javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/custom/custom.js"></script>
+  </body>
 </html>
 
 <!-- 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 -->

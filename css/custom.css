@@ -34,7 +34,8 @@ header .navi li.active a {
   padding:2.5rem 0;   /* 위아래 간격 */
 }
 
-.hero .container {
+.hero .container,
+.explore .container {
   display:flex;
   column-gap: .9375rem;
 }
@@ -44,8 +45,8 @@ header .navi li.active a {
   height:100%; /* 비율이 다를 때 이 방법을 쓰면 안 됨!! 반드시 정사각형이거나 사진 형태가 같을 때 할 것 */
 }
 
-.hero .container .left-side,
-.hero .container .right-side {
+.left-side,
+.right-side {
   width:50%;
   position:relative;
 }
@@ -73,18 +74,18 @@ header .navi li.active a {
   margin:0.875rem 0 1.875rem;  /* flex-gap을 이용해도 되지만 요소가 세개뿐이므로! */
 }
 
-.hero .container .right-side {
+.right-side {
   display:flex;
   flex-wrap:wrap; /* flex의 속성은 행이기 때문에 크기 별로 공간을 나눌 수 있게 한다. */
   gap:.9375rem; /* column-gap:행 간격, row-gap:열 간격, gap:사방 간격 */
 }
 
-.hero .container .right-side > div {
+ .right-side > div {
   width:calc(50% - .4688rem);  /* 위에서 준 .9375rem(15px)을 절반으로 나눈 값을 뺀다 */
   position:relative;
 }
 
-.hero .right-side .inside-grid-txt {
+.right-side .inside-grid-txt {
   position:absolute;
   width:100%;
   height:100%;
@@ -96,12 +97,12 @@ header .navi li.active a {
   color:#fff;
 }
 
-.hero .right-side .inside-grid-txt h4 {
+.right-side .inside-grid-txt h4 {
   font-size:1.5rem;
   font-weight:700;
 }
 
-.hero .right-side .inside-grid-txt span {
+.right-side .inside-grid-txt span {
   font-style:italic;
 }
 
@@ -124,10 +125,10 @@ header .navi li.active a {
   align-items: center;
   padding:.75rem;
 }
-.hero .right-side .hover-box h4 {
+.right-side .hover-box h4 {
   font-size:1.25rem;
 }
-.hero .right-side .hover-box span {
+.right-side .hover-box span {
   text-align: center;
   font-size:.875em;
   padding:.75rem 0;
@@ -137,4 +138,167 @@ header .navi li.active a {
     /* 위에서 div에 relative를 줬기 때문에, 위처럼 작성해야 :hover가 먹는다. */
     opacity:1;
     visibility: visible;
-  } 
+  }
+
+/* Men slider section */
+
+/* Explore Section Style */
+.explore .section-title{
+  margin-bottom:1.5rem;
+ } 
+ 
+ .explore .left-side{
+  padding-right:2rem;
+ } 
+ 
+ .explore .left-side p{
+  font-size: 0.875rem;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  margin-top: 1.5rem;
+ }
+ 
+ .explore .common-btn{
+  border:1px solid var(--f-m-color);
+  color:var(--f-m-color);
+  margin-top:1.5rem;
+  display:inline-block;
+  transition:all .4s;
+ }
+ 
+ .explore .common-btn:hover{
+  background:var(--f-m-color);
+  color:#fff;
+ }
+
+ .explore .right-side > div {
+  background:#f8f8f8;
+ }
+
+​​.explore .right-side .inside-grid-txt{
+  color:var(--f-m-color);
+  row-gap:.4375rem
+ }
+ 
+ .explore .right-side .inside-grid-txt span{
+  font-size:0.875rem;
+  color:var(--f-g-color);
+ }
+ 
+ .explore .right-side > div > img {
+  width:100%;
+ }
+
+ .explore .right-side .inside-grid-txt{
+  color:var(--f-m-color);
+  row-gap:.4375rem
+  }
+  .explore .right-side .inside-grid-txt span{
+  font-size:0.875rem;
+  color:var(--f-g-color);
+  }
+  
+/* Men's Slider Section Style */
+.men-slider .slider-wrapper{
+  position:relative;
+ }
+ 
+ .men-slider .slider-wrapper img{
+  width:100%;
+ }
+ 
+ .men-slider .slider-wrapper .slider-navi{
+  width:115%;
+  height:auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+ } 
+ 
+ .slider-navi .swiper-button-prev,
+ .slider-navi .swiper-button-next{
+  border:1px solid var(--f-m-color);
+  padding:1.25rem;
+ }
+ 
+ .slider-navi .swiper-button-prev:after,
+ .slider-navi .swiper-button-next:after{
+  font-size:20px;
+  color:var(--f-m-color);
+  font-weight:bold;
+ }
+ 
+ .men-slider .slider-txt{
+  width:100%;
+  height:auto;
+ }
+ 
+ .men-slider .slider-txt .item-tit{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:.5rem 0;
+ }
+ 
+ .men-slider .slider-txt .item-tit h4{
+  font-weight:700;
+  font-size:1.375rem;
+  color:var(--f-m-color);
+ }
+ 
+ .men-slider .slider-txt .item-tit .item-star{
+  display:flex;
+ }
+ 
+ 
+ .men-slider .item-price{
+  width:100%;
+  height:auto;
+ } 
+ 
+ .men-slider .item-price h5{
+  font-weight:400;
+  font-size:1.375rem;
+  color:var(--f-g-color);
+ }
+ 
+ .men-slider .item-hover-box{
+  position:relative;
+  overflow:hidden;
+ }
+ 
+ .men-slider .item-hover-box:hover ul{
+  opacity:1;
+  transform: translateY(0);
+ }
+ 
+ .men-slider .item-hover-box ul{
+  position:absolute;
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content: center;
+  bottom:50px;
+  column-gap: .75rem;
+  transition:all .4s;
+  opacity:0;
+  transform:translateY(100px);
+ }
+ 
+ .men-slider .item-hover-box ul a{
+  padding:1rem 1.5rem;
+  background:#fff;
+ }
+ 
+ .men-slider .item-hover-box ul a:hover{
+  background: #efefef;
+ }
+ 
+ .swiper-pagination{
+  display:none;
+ }
+ 
+ 
